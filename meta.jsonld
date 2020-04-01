@@ -1,0 +1,16 @@
+{
+        "@context": "https://schema.org/",
+        "@id" : "https://raw.githubusercontent.com/apyspo/KG4GitHub/master/context.jsonld",
+        "@type": "CreativeWork",
+        "author": {
+            "@type": "Person",
+            "name": "Evren Alim",
+            "url" : "https://github.com/apyspo/KG4GitHub/"
+        },
+        "description" : "KG4GCR is a knowledge graph of github repositories and linked contributors, using libraries and similar topics of repositories used for recommending new team contributors which has similar skills and interest",
+    	"abstract" : "KG4GCR - KG for GitHub contributor recommendation",
+    	"dateCreated" : "30/03/2020",
+    	"dateModified" : "30/03/2020",
+    	"datePublished" : "30/03/2020",
+    	"keywords" : "recommendation, contributor, developer, graph, github, embedding, python"
+ }
