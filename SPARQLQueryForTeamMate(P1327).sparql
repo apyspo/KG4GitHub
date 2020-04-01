@@ -3,7 +3,6 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>             
 prefix wd: <https://www.wikidata.org/wiki/>
 prefix wdp: <https://www.wikidata.org/wiki/Property:> 
-prefix kg4gcr: <http://kg4gcr.com/>
 
 #Query for consturct and insert wdp:P1327 predicates
 #If both contributor working on the same repository they considered as team-mate
