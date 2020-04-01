@@ -1,0 +1,19 @@
+PREFIX rr: <http://www.w3.org/ns/r2rml#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>             
+prefix wd: <https://www.wikidata.org/wiki/>
+prefix wdp: <https://www.wikidata.org/wiki/Property:> 
+prefix kg4gcr: <http://kg4gcr.com/>
+
+#Query for consturct and insert wdp:P1327 predicates
+#If both contributor working on the same repository they considered as team-mate
+
+INSERT {
+  GRAPH <http://kg4gcr/> {
+	?ContributorA wdp:P1327 ?ContributorB.
+}}
+WHERE {
+    ?Repository wdp:P943 ?ContributorA ;
+     wdp:P943 ?ContributorB ;
+    FILTER(?ContributorA != ?ContributorB ).
+}
