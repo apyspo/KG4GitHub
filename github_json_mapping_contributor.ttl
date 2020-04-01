@@ -1,0 +1,41 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+# Wikidata ontology prefix               
+@prefix wd: <https://www.wikidata.org/wiki/>.
+ # Wikidata sub-ontology prefix
+@prefix wdp: <https://www.wikidata.org/wiki/Property:> .
+@prefix kg4gcr: <http://kg4gcr.com/>.
+@base  <http://kg4gcr.com/>.
+
+<#github_json_mapping_contributor> 
+  a rr:TriplesMap;
+
+  rml:logicalSource [
+    rml:source "dict_rep_libs.json";
+    rml:referenceFormulation ql:JSONPath; 
+    rml:iterator "$[*].contributors[*]"
+  ];
+
+    rr:subjectMap [ rr:template "http://kg4gcr.com/contributor/{contributor}" ;
+    rr:class wd:Q5482740  # programmer
+  ];
+
+    rr:predicateObjectMap [ 
+    rr:predicate rdfs:label ;
+    rr:objectMap [ rml:reference "contributor"; rr:datatype xsd:string ]
+  ]; 
+
+    rr:predicateObjectMap [ 
+    rr:predicate wdp:P2037;
+    rr:objectMap [ rr:template "https://github.com/{contributor}"; rr:datatype xsd:string ]
+  ]; 
+
+ #   rr:predicateObjectMap [
+ #   rr:predicate wdp:P101 #works on project #wdp:P2037;
+ #   rr:objectMap [ rr:template "http://kg4gcr.com/project/{repository}"; ]
+ # ]; 
+    
+ .
