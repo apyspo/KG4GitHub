@@ -8,3 +8,4 @@ github_json_mapping_contributor.ttl : RML mapping file to be used with rmlmapper
 github_json_mapping_repository.ttl  : RML mapping file to be used with rmlmapper.jar to convert json to repout.nt (n-triples of repositories) both using same source dict_rep_libs.json
 SPARQLQueryForTeamMate(P1327).sparql: SPARQL query for consturcting and inserting wdp:P1327 (team member) predicates if both contributor working on the same repository they considered as team-mate. 
 KG4GCR.ipynb                        : Google colab python notebook file which includes all functions to process statements.tsv file on google drive https://drive.google.com/file/d/1zCUwXQjl4u4DtPAgi1MRqQU7SCXgL9-I/view?usp=sharing
+meta.jsonld                         : Metadata description in schema.org context
