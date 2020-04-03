@@ -4,7 +4,7 @@ KG4GCR is a knowledge graph of github repositories and linked contributors, usin
 
 For source data "statements.tsv" ~400MB file you can download from below link and add into your google drive so that you can mount to KG4GCR.ipynb
 
-https://drive.google.com/file/d/1zCUwXQjl4u4DtPAgi1MRqQU7SCXgL9-I/view?usp=sharing
+link: https://drive.google.com/file/d/1zCUwXQjl4u4DtPAgi1MRqQU7SCXgL9-I/view?usp=sharing
 
 getdatafromgithub.py                : Python script file which is used to access GitHub API and extract data for requested repositories.
 dict_rep_libs.json                  : Python script stores repository related extracted data in append mode in this json file for all requested repositories.
